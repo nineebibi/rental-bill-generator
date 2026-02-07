@@ -76,18 +76,6 @@ const SingleReceipt = ({ data }: { data: BillData }) => {
                         ค่าไฟ :
                     </div>
                     <div className="w-2/4 p-4 border-r border-black text-sm space-y-1 pl-12 flex flex-col justify-center">
-                        <div className="flex justify-between w-[90%]">
-                            <span>ปัจจุบัน</span>
-                            <span className="border-b border-black w-24 text-right px-1">
-                                {data.electricity.current || ""}
-                            </span>
-                        </div>
-                        <div className="flex justify-between w-[90%]">
-                            <span>เดือนก่อน</span>
-                            <span className="border-b border-black w-24 text-right px-1">
-                                {data.electricity.previous || ""}
-                            </span>
-                        </div>
                     </div>
                     <div className="w-1/4 p-4 flex items-center justify-end text-lg font-medium">
                         {elecTotal > 0 && elecTotal.toLocaleString()}
@@ -100,18 +88,6 @@ const SingleReceipt = ({ data }: { data: BillData }) => {
                         ค่าน้ำ :
                     </div>
                     <div className="w-2/4 p-4 border-r border-black text-sm space-y-1 pl-12 flex flex-col justify-center">
-                        <div className="flex justify-between w-[90%]">
-                            <span>ปัจจุบัน</span>
-                            <span className="border-b border-black w-24 text-right px-1">
-                                {data.water.current || ""}
-                            </span>
-                        </div>
-                        <div className="flex justify-between w-[90%]">
-                            <span>เดือนก่อน</span>
-                            <span className="border-b border-black w-24 text-right px-1">
-                                {data.water.previous || ""}
-                            </span>
-                        </div>
                     </div>
                     <div className="w-1/4 p-4 flex items-center justify-end text-lg font-medium">
                         {waterTotal > 0 && waterTotal.toLocaleString()}
