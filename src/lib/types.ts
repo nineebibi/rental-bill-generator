@@ -24,12 +24,12 @@ export const initialBillData: BillData = {
   electricity: {
     current: 0,
     previous: 0,
-    unitPrice: 7,
+    unitPrice: 10,
   },
   water: {
     current: 0,
     previous: 0,
-    unitPrice: 18,
+    unitPrice: 10,
   },
   trash: 0,
 };
